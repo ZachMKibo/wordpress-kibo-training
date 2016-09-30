@@ -20,21 +20,22 @@
 include_recipe "php"
 
 # On Windows PHP comes with the MySQL Module and we use IIS on Windows
-unless platform? "windows"
+# unless platform? "windows"
   include_recipe "php::module_mysql"
   include_recipe "apache2"
   include_recipe "apache2::mod_php5"
-end
+# end
 
 include_recipe "wordpress-kibo-training::app"
 
+=begin 
 if platform?('windows')
 
-  include_recipe 'iis::remove_default_site'
+include_recipe 'iis::remove_default_site'
 
-  iis_pool 'WordpressPool' do
-    no_managed_code true
-    action :add
+ iis_pool 'WordpressPool' do
+   no_managed_code true
+  action :add
   end
 
   iis_site 'Wordpress' do
@@ -45,6 +46,7 @@ if platform?('windows')
     action [:add,:start]
   end
 else
+=end
   web_app "wordpress" do
     template "wordpress.conf.erb"
     docroot node['wordpress']['dir']
@@ -52,5 +54,5 @@ else
     server_aliases node['wordpress']['server_aliases']
     server_port node['wordpress']['server_port']
     enable true
-  end
-end
+   end
+# end
