@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: wordpress
+# Cookbook Name:: wordpress-kibo-training
 # Recipe:: nginx
 #
 # Copyright 2009-2010, Opscode, Inc.
@@ -39,7 +39,7 @@ include_recipe "php::module_mysql"
 node.set_unless['nginx']['default_site_enabled'] = false
 include_recipe "nginx"
 
-include_recipe "wordpress::app"
+include_recipe "wordpress-kibo-training::app"
 
 template "#{node['nginx']['dir']}/sites-enabled/wordpress.conf" do
   source "nginx.conf.erb"

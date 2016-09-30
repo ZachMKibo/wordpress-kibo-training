@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: wordpress
+# Cookbook Name:: wordpress-kibo-training
 # Recipe:: apache
 #
 # Copyright 2009-2010, Opscode, Inc.
@@ -26,7 +26,7 @@ unless platform? "windows"
   include_recipe "apache2::mod_php5"
 end
 
-include_recipe "wordpress::app"
+include_recipe "wordpress-kibo-training::app"
 
 if platform?('windows')
 

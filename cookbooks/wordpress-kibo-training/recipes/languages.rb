@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: wordpress
+# Cookbook Name:: wordpress-kibo-training
 # Recipe:: languages
 # Author:: Koseki Kengo <koseki@gmail.com>
 #
@@ -18,7 +18,7 @@
 # limitations under the License.
 #
 
-include_recipe "wordpress"
+include_recipe "wordpress-kibo-training"
 
 directory "#{node['wordpress']['dir']}/wp-content/languages" do
   owner "root"
