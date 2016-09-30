@@ -1,7 +1,10 @@
 CHANGELOG
 
+Version 1.0.4
+-Removed iis dependency from metadata.json
+
 Version 1.0.3
-Changed the apache.rb file to longer use iis in an "if" statement.
+-Changed the apache.rb file to longer use iis in an "if" statement.
 
 Version 1.0.2
 -modified:   recipes/apache.rb
