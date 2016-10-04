@@ -2,6 +2,9 @@
 
 This file is used to list changes made in each version of the php cookbook.
 
+## 2.1.2 (2016-09-30)
+- Removed iis dependency from metadata.json file
+
 ## 2.1.1 (2016-09-15)
 
 - Fix recompile un-pack php creates
