@@ -9,7 +9,8 @@
     "amazon": ">= 0.0.0"
   },
   "dependencies": {
-    "lamp": ">= 0.0.0"
+    "lamp": ">= 0.0.0",
+    "aws": ">= 0.0.0"
   },
   "recommendations": {
 
@@ -35,9 +36,9 @@
   "recipes": {
 
   },
-  "version": "1.0.0",
-  "source_url": "https://github.com/whithajess/wordpress_lamp",
-  "issues_url": "https://github.com/whithajess/wordpress_lamp/issues",
+  "version": "0.1.0",
+  "source_url": "",
+  "issues_url": "",
   "privacy": false,
   "chef_versions": [
 
